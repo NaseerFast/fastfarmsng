@@ -220,21 +220,32 @@ const Pricing = () => {
             <motion.h3
               variants={scrollAnimation}
               className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed w-9/12 sm:w-6/12 lg:w-4/12 mx-auto">
-              Huge Global Network of Fast VPN{" "}
+             Pickup Hours{" "}
             </motion.h3>
-            <motion.p className="leading-normal  mx-auto my-2 w-10/12 sm:w-7/12 lg:w-6/12" variants={scrollAnimation}>
+            {/* <motion.p className="leading-normal  mx-auto my-2 w-10/12 sm:w-7/12 lg:w-6/12" variants={scrollAnimation}>
               See LaslesVPN everywhere to make it easier for you when you move
               locations.
-            </motion.p>
+            </motion.p> */}
           </ScrollAnimationWrapper>
           <ScrollAnimationWrapper>
-            <motion.div className="py-12 w-full px-8 mt-16" variants={scrollAnimation}> 
-              <Maps className="w-full h-auto" />
+            <motion.div className="py-1 w-full px-8 mt-1" variants={scrollAnimation}> 
+              {/* <Maps className="w-full h-auto" /> */}
+              <div className="space-y-4">
+                
+                <p>No 6, Kontagora Street</p>
+                <p>GRA POLO, Maiduguri Borno State</p>
+                <p>Saturday - Thursday 9am - 4pm</p>
+              
+                <ButtonOutline>Get Directions</ButtonOutline>
+              </div>
+            
             </motion.div>
           </ScrollAnimationWrapper>
           <ScrollAnimationWrapper>
             <motion.div className="w-full flex justify-evenly items-center mt-4 flex-wrap lg:flex-nowrap" variants={scrollAnimation}>
               {/* <Netflix className="h-18 w-auto" /> */}
+
+             
               <img
                 src="/assets/Icon/amazon.png"
                 className="h-14 w-auto mt-4 lg:mt-2"

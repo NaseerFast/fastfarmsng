@@ -5,10 +5,10 @@ import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 
 const features = [
-  "Powerfull online protection.",
-  "Internet without borders.",
-  "Supercharged VPN",
-  "No specific time limits."
+  "Events Organizers ",
+  "Festive Periods",
+  "Restaurants, ",
+  "Retail Stores"
 ]
 
 const Feature = () => {
@@ -23,7 +23,7 @@ const Feature = () => {
         <ScrollAnimationWrapper className="flex w-full justify-end">
           <motion.div className="h-full w-full p-4" variants={scrollAnimation}>
             <Image
-              src="/assets/Illustration2.png"
+              src="/assets/sales2.svg"
               alt="VPN Illustrasi"
               layout="responsive"
               quality={100}
@@ -36,11 +36,10 @@ const Feature = () => {
 
         <motion.div className="flex flex-col items-end justify-center ml-auto w-full lg:w-9/12" variants={scrollAnimation}>
           <h3 className="text-3xl lg:text-4xl font-medium leading-relaxed text-black-600">
-            We Provide Many Features You Can Use
+          Looking to buy in bulk at wholesale price?
           </h3>
           <p className="my-2 text-black-500">
-            You can explore the features that we provide with fun and have their
-            own functions each feature.
+            We offer great deals on bulk purchase of chicken and chicken parts suitable for everyone...
           </p>
           <ul className="text-black-500 self-start list-inside ml-8">
             {features.map((feature, index) => (
