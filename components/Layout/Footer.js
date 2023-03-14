@@ -1,14 +1,14 @@
 import React from "react";
 import LogoVPN from "../../public/assets/Logo.svg";
-import Facebook from "../../public/assets/Icon/facebook.svg";
-import Twitter from "../../public/assets/Icon/twitter.svg";
-import Instagram from "../../public/assets/Icon/instagram.svg";
+import Facebook from "../../public/assets/Icon/facebook-f.svg";
+import Twitter from "../../public/assets/Icon/twitter-fill.svg";
+import Instagram from "../../public/assets/Icon/instagram-fill.svg";
 const Footer = () => {
   return (
     <div className="bg-white-300 pt-44 pb-24">
       <div className="max-w-screen-xl w-full mx-auto px-6 sm:px-8 lg:px-16 grid grid-rows-6 sm:grid-rows-1 grid-flow-row sm:grid-flow-col grid-cols-3 sm:grid-cols-12 gap-4">
         <div className="row-span-2 sm:col-span-4 col-start-1 col-end-4 sm:col-end-5 flex flex-col items-start ">
-        <img src="/assets/Logo.png"  alt="logo" width="60px" height=""/>
+        <img src="/assets/logo.png"  alt="logo" width="60px" height=""/>
           <p className="mb-4">
             <strong className="font-medium">FastFarms</strong> is a startup that
          focuses on providing a better plan for chicken and meat supply chain.

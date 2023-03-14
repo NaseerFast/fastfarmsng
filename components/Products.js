@@ -13,7 +13,7 @@ import { getProducts } from "../pages/api/products";
 import ProductCard from "./ProductCard";
 
 
-const Pricing = () => {
+const Products = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
   const dispatch = useDispatch();
 
@@ -22,7 +22,7 @@ const Pricing = () => {
       "id": 1,
       "product": "Chicken Wings",
       "category": "xbox",
-      "image": "/assets/chickenwings.png",
+      "image": "/assets/chickenwings-2.png",
       "price": 1200
     },
     {
@@ -36,28 +36,28 @@ const Pricing = () => {
       "id": 3,
       "product": "Chicken Breast",
       "category": "xbox",
-      "image": "/assets/chickenbreast.png",
+      "image": "/assets/chickenbreast-2.png",
       "price": 1500
     },
     {
       "id": 4,
       "product": "Whole Large",
       "category": "xbox",
-      "image": "/assets/whole-lg.png",
+      "image": "/assets/whole-lg-2.png",
       "price": 3500
     },
     {
       "id": 5,
       "product": "Whole Medium",
       "category": "xbox",
-      "image": "/assets/whole-md.png",
+      "image": "/assets/whole-md-2.png",
       "price": 3000
     },
     {
       "id": 6,
       "product": "Shredded",
       "category": "xbox",
-      "image": "/assets/tenderloins.png",
+      "image": "/assets/tenderloins-2.png",
       "price": 1200
     },
     
@@ -310,7 +310,7 @@ const Pricing = () => {
   );
 };
 
-export default Pricing;
+export default Products;
 
 export async function getStaticProps() {
   const products = getProducts();

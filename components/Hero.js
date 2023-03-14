@@ -8,19 +8,19 @@ import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 const Hero = ({
   listUser = [
     {
-      name: "Birds Sold",
-      number: "1,390",
-      icon: "/assets/Icon/heroicons_sm-user.svg",
+      name: "Order",
+      number: "Home Delivery",
+      icon: "/assets/Icon/outline-access-time-filled_2.svg",
     },
     {
-      name: "Locations",
-      number: "13",
-      icon: "/assets/Icon/gridicons_location.svg",
+      name: "Payment",
+      number: "Flexible Payment Options",
+      icon: "/assets/Icon/ok-payment.svg",
     },
     {
-      name: "Happy Clients",
-      number: "157",
-      icon: "/assets/Icon/bx_bxs-server.svg",
+      name: "Support Line",
+      number: "24/7 Customer Support",
+      icon: "/assets/Icon/round-support-agent.svg",
     },
   ],
 }) => {
@@ -72,15 +72,15 @@ const Hero = ({
               custom={{duration: 2 + index}}
               variants={scrollAnimation}
             >
-              <div className="flex mx-auto w-40 sm:w-auto">
-                <div className="flex items-center justify-center bg-green-100 w-12 h-12 mr-6 rounded-full">
-                  <img src={listUsers.icon} className="h-6 w-6" />
+              <div className="flex mx-auto w-40 sm:w-auto inline-flex">
+                <div className="flex  bg-green-100 w-12 h-12 mr-6 rounded-full">
+                  <img src={listUsers.icon} className="h-8 w-8" />
                 </div>
-                <div className="flex flex-col">
-                  <p className="text-xl text-black-600 font-bold">
+                <div className="flex flex-row">
+                  <p className="text-lg text-black-600 font-bold">
                     {listUsers.number}
                   </p>
-                  <p className="text-lg text-black-500">{listUsers.name}</p>
+                  {/* <p className="text-lg text-black-500">{listUsers.name}</p> */}
                 </div>
               </div>
             </motion.div>

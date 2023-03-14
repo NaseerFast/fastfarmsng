@@ -46,7 +46,7 @@ const ProductCard = ({ product}) => {
       <img className="w-full h-78 object-cover" src={product.image} alt={product.product} />
       <div className="px-6 py-4">
         <div className="font-bold text-xl mb-2">{product.product}</div>
-        <div className="text-gray-700 text-base">N {formatter.format(`${ product.price}`)}</div>
+        <div className="text-gray-700 text-base">N {formatter.format(`${ product.price}`)} / Kg</div>
         <button
          onClick={() => dispatch(addToCart(product))}
          className={styles.button}
