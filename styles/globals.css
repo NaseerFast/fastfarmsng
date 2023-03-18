@@ -83,7 +83,7 @@ li{
         height:10.8rem;
         width:100%;
         min-width:100%;
-        background-image: url("/public/assets/bg-sidebar-mobile.svg");
+        background-image: url("../public/assets/bg-sidebar-mobile.svg");
         position: absolute;
         top:0;
         left:0;
@@ -108,7 +108,7 @@ li{
         width:365px;
         min-width:365px;
         border-radius:1rem;
-        background-image: url("/public//assets//bg-sidebar-desktop.svg");
+        background-image: url("./public/assets/bg-sidebar-desktop.svg");
     }
     form{
         position: relative;
