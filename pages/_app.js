@@ -1,6 +1,6 @@
-import "/styles/tailwind.css";
-import "/styles/slick.css";
-import "/styles/globals.css";
+import "../styles/tailwind.css";
+import "../styles/slick.css";
+import "../styles/globals.css";
 import { Provider } from "react-redux";
 import store from "../redux/store";
 
