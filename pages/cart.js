@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import {
   incrementQuantity,
@@ -10,7 +10,7 @@ import styles from '../styles/CartPage.module.css';
 import { PaystackButton } from 'react-paystack';
 import ButtonPrimary from '../components/misc/ButtonPrimary';
 import Head from 'next/head';
-
+import Layout from '../components/Layout/Layout';
 
 
 var formatter = new Intl.NumberFormat({
@@ -35,10 +35,12 @@ const CartPage = () => {
     );
   };
 
-   console.log("Hellow World", getTotalPrice().toFixed(2));
+  //  console.log("Hellow World", getTotalPrice().toFixed(2));
 
   const publicKey = "pk_test_db1662f408804188217a4c99d28cd2d484611f93"
-  const amount = getTotalPrice() + '00'
+  const dressing = 250;
+  const delivery = 300;
+  const amount = getTotalPrice() + dressing + delivery + '00'
   const [email, setEmail] = useState("jaafar.nasir71@gmail.com")
   const [name, setName] = useState("")
   const [phone, setPhone] = useState("")
@@ -57,9 +59,19 @@ const CartPage = () => {
     onClose: () => alert("Wait! Don't leave :("),
   }
 
+  // const [delivery, SetDelivery] = useState(false);
+  // const [isShown, setIsShown] = useState(false);
+ 
+  // if (delivery){
+  //   useEffect(() => {
+  //     setIsShown(true);
+  //   }, []);
+   
+  // }
 
   return (
-    <div className="px-4 md:px-12">
+    <Layout>
+    <div className="px-4 md:px-12 pt-28 mt-18 bg--500" >
         {cart.length === 0 ? (
     <div class={styles.outer}>
     <div class={styles.middle}>
@@ -86,8 +98,24 @@ const CartPage = () => {
           <input type="text" id="mobile-number"  onChange={(e) => setPhone(e.target.value)}  name="mobile-number" placeholder="0701-2674-XXXX" class="block w-full rounded border-gray-300 bg-gray-50 py-3 px-4 pr-10 text-sm placeholder-gray-300 shadow-sm outline-none transition focus:ring-2 focus:ring-teal-500" /><img src="/images/uQUFIfCYVYcLK0qVJF5Yw.png" alt="" class="absolute bottom-3 right-3 max-h-4" /></div>
           <div>
             <label for="email" class="text-xs font-semibold text-gray-600">Email</label>
-            <input type="email" id="email"  onChange={(e) => setEmail(e.target.value)}  name="email" placeholder="john.capler@fang.com" class="mt-1 block w-full rounded border-gray-300 bg-gray-50 py-3 px-4 text-sm placeholder-gray-300 shadow-sm outline-none transition focus:ring-2 focus:ring-teal-500" /></div>
-          {/* <div class="relative"><label for="card-number" class="text-xs font-semibold text-gray-600">Card number</label><input type="text" id="card-number" name="card-number" placeholder="1234-5678-XXXX-XXXX" class="block w-full rounded border-gray-300 bg-gray-50 py-3 px-4 pr-10 text-sm placeholder-gray-300 shadow-sm outline-none transition focus:ring-2 focus:ring-teal-500" /><img src="/images/uQUFIfCYVYcLK0qVJF5Yw.png" alt="" class="absolute bottom-3 right-3 max-h-4" /></div> */}
+            <input type="email" id="email"  onChange={(e) => setEmail(e.target.value)}  name="email" placeholder="nasir@yahoo.com" class="mt-1 block w-full rounded border-gray-300 bg-gray-50 py-3 px-4 text-sm placeholder-gray-300 shadow-sm outline-none transition focus:ring-2 focus:ring-teal-500" /></div>
+         
+         
+            {/* <div class="wrapper">
+ <input type="radio" name="select" id="option-1" value="Delivery" onClick={() => SetDelivery(true)}/>
+ <input type="radio" name="select" id="option-2" value="Pickup" onClick={() => SetDelivery(false)} />
+   <label for="option-1" class="option option-1">
+     <div class="dot"></div>
+      <span>Pick Up</span>
+      </label>
+   <label for="option-2" class="option option-2">
+     <div class="dot"></div>
+      <span>Delivery</span>
+   </label>
+</div> */}
+
+{/* {isShown && <p>Goto Polo </p>} */}
+ {/* <div class="relative"><label for="card-number" class="text-xs font-semibold text-gray-600">Card number</label><input type="text" id="card-number" name="card-number" placeholder="1234-5678-XXXX-XXXX" class="block w-full rounded border-gray-300 bg-gray-50 py-3 px-4 pr-10 text-sm placeholder-gray-300 shadow-sm outline-none transition focus:ring-2 focus:ring-teal-500" /><img src="/images/uQUFIfCYVYcLK0qVJF5Yw.png" alt="" class="absolute bottom-3 right-3 max-h-4" /></div> */}
           {/* <div>
             <p class="text-xs font-semibold text-gray-600">Expiration date</p>
             <div class="mr-6 flex flex-wrap">
@@ -150,8 +178,11 @@ const CartPage = () => {
         </ul>
         <div class="my-5 h-0.5 w-full bg-white bg-opacity-30"></div>
         <div class="space-y-2">
-          <p class="flex justify-between text-lg font-bold text-white"><span>Total price:</span><span>N {formatter.format(`${getTotalPrice().toFixed(2)}`)}</span></p>
-          <p class="flex justify-between text-sm font-medium text-white"><span>Delivery: </span><span>N500.00</span></p>
+          <p class="flex justify-between text-lg font-bold text-white"><span>Total  excluding service fee:</span><span>N {formatter.format(`${getTotalPrice().toFixed(2) - delivery - dressing}`)}</span></p>
+          <p class="flex justify-between text-sm font-medium text-white"><span>Dressing: </span><span>N {formatter.format(`${dressing}`)}</span></p>
+          <p class="flex justify-between text-sm font-medium text-white"><span>Delivery: </span><span>N {formatter.format(`${delivery}`)}</span></p>
+          <p class="flex justify-between text-xl font-bold text-white"><span>Total Due Today:</span><span>N {formatter.format(`${getTotalPrice().toFixed(2)}`)}</span></p>
+
         </div>
       </div>
       <div class="relative mt-10 text-white">
@@ -236,6 +267,7 @@ const CartPage = () => {
       )} */}
       
     </div>
+    </Layout>
   );
 };
 

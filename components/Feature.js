@@ -3,6 +3,7 @@ import React, { useMemo } from "react";
 import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
+import ButtonPrimary from "./misc/ButtonPrimary";
 
 const features = [
   "Events Organizers ",
@@ -39,7 +40,7 @@ const Feature = () => {
           Looking to buy in bulk at wholesale price?
           </h3>
           <p className="my-2 text-black-500">
-            We offer great deals on bulk purchase of chicken and chicken parts suitable for everyone...
+            We offer great deals on bulk purchase of chicken and chicken parts that works for everyone...
           </p>
           <ul className="text-black-500 self-start list-inside ml-8">
             {features.map((feature, index) => (
@@ -59,7 +60,16 @@ const Feature = () => {
               )
             )}
           </ul>
+
+          <div>
+          <p className="my-2 text-black-500">
+          If you feel lucky today, click on the button below to get dynamic prices that are dependent on availability, distance and demand.
+          </p>
+
+           <ButtonPrimary>View Offer</ButtonPrimary>     
+           </div>
         </motion.div>
+        
         </ScrollAnimationWrapper>
       </div>
     </div>

@@ -10,40 +10,40 @@ import ArrowNext from "../public/assets/Icon/eva_arrow-next-fill.svg";
 const Testimoni = ({
   listTestimoni = [
     {
-      name: "iezh Robert",
+      name: "Nasir Jaafar",
       image: "/assets/people-3.png",
-      city: "Warsaw",
-      country: "Poland",
+      city: "Facebook",
+     
       rating: "4.5",
       testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
+        "Wow... I am very happy to purchase from fastfarm, the quality turned out to be more than my expectations and so far there have been no problems. FastFarms always the best",
+    },
+    {
+      name: "Alhaji Ali",
+      image: "/assets/people-3.png",
+      city: "Instagram",
+      
+      rating: "4.5",
+      testimoni:
+        "The customer service at this business is amazing. They always go above and beyond to ensure that I'm satisfied with my purchase. Whether I'm buying a dozen eggs or a whole chicken.",
+    },
+    {
+      name: "Sini Nuhu",
+      image: "/assets/people-3.png",
+      city: "Facebook",
+     
+      rating: "4.5",
+      testimoni:
+        "I love the variety of eggs this business offers. From brown to white to speckled, It feels good to support a small business and to know that my food was ethically sourced.",
     },
     {
       name: "iezh Robert",
       image: "/assets/people-3.png",
-      city: "Warsaw",
-      country: "Poland",
+      city: "Whatsapp",
+     
       rating: "4.5",
       testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
-    },
-    {
-      name: "iezh Robert",
-      image: "/assets/people-3.png",
-      city: "Warsaw",
-      country: "Poland",
-      rating: "4.5",
-      testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
-    },
-    {
-      name: "iezh Robert",
-      image: "/assets/people-3.png",
-      city: "Warsaw",
-      country: "Poland",
-      rating: "4.5",
-      testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
+        "I'll never go back to store-bought eggs again!",
     },
   ],
 }) => {
@@ -105,7 +105,7 @@ const Testimoni = ({
                       {listTestimonis.name}
                     </p>
                     <p className="text-sm text-black-500 capitalize">
-                      {listTestimonis.city},{listTestimonis.country}
+                      {listTestimonis.city}
                     </p>
                   </div>
                 </div>
