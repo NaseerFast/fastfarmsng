@@ -4,8 +4,8 @@ import { useState } from "react";
 import PersonalInfo from "./PersonalInfo";
 import SelectPlan from "./selectPlan/selectPlan";
 import PickAddOns from "./pickAddOns/pickAddOns";
-import Summary from "./summary";
-import ThankYou from "./thankYou";
+import Summary from "./Summary";
+import ThankYou from "./Thankyou";
 import {
 	quantityRegex,
 	nameRegex,
