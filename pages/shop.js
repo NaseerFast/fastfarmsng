@@ -58,7 +58,7 @@ export default function Home() {
 	}
 
 	return (
-		<>
+		<Layout>
 			{/* <Head>
 				<title>Multi Step Form</title>
 				<meta name="description" content="Multi-step Form" />
@@ -88,6 +88,6 @@ export default function Home() {
 				/>
 			</main>
       {/* </Layout> */}
-		</>
+		</Layout>
 	);
 }
