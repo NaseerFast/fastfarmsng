@@ -1,4 +1,4 @@
-import utilStyles from "../../styles/Utils.module.css";
+import utilStyles from "../../styles/utils.module.css";
 import personalStyles from "../../styles/PersonalInfo.module.css";
 
 export default function PersonalInfo({

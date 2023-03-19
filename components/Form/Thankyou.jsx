@@ -1,4 +1,4 @@
-import utilStyles from "../../styles/Utils.module.css";
+import utilStyles from "../../styles/utils.module.css";
 import thankYouStyles from "../../styles/ThankYou.module.css";
 import Image from "next/image";
 

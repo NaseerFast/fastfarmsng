@@ -1,4 +1,4 @@
-import utilStyles from "../../../styles/Utils.module.css";
+import utilStyles from "../../../styles/utils.module.css";
 import AddOnsCheckbox from "./addOnsCheckbox";
 
 export default function PickAddOns({ addOns, setAddOns, yearly }) {

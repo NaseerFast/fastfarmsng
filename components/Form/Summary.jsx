@@ -1,4 +1,4 @@
-import utilStyles from "../../styles/Utils.module.css";
+import utilStyles from "../../styles/utils.module.css";
 import summaryStyles from "../../styles/Summary.module.css";
 
 export default function Summary({ formData, toggleYearly }) {

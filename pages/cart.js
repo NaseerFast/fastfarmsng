@@ -76,7 +76,7 @@ const CartPage = () => {
     <div class={styles.outer}>
     <div class={styles.middle}>
       <div class={styles.inner}>
-      <h1 class="mb-4">Your Cart is Very Empty!</h1>
+      <h1 class="mb-4">Your Cart is Empty!</h1>
       <ButtonPrimary>Start Shopping</ButtonPrimary>
       </div>
     </div>

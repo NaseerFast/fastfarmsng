@@ -1,17 +1,17 @@
-import utilStyles from '../../styles/Utils.module.css';
-import formStyles from '../../styles/Form.module.css';
-import { useState } from 'react';
-import PersonalInfo from './PersonalInfo';
-import SelectPlan from './selectPlan/selectPlan';
-import PickAddOns from './pickAddOns/pickAddOns';
-import Summary from './Summary';
-import ThankYou from './Thankyou';
+import utilStyles from "../../styles/utils.module.css";
+import formStyles from "../../styles/Form.module.css";
+import { useState } from "react";
+import PersonalInfo from "./PersonalInfo";
+import SelectPlan from "./selectPlan/selectPlan";
+import PickAddOns from "./pickAddOns/pickAddOns";
+import Summary from "./Summary";
+import ThankYou from "./Thankyou";
 import {
 	quantityRegex,
 	nameRegex,
 	emailRegex,
 	phoneNumberRegex,
-} from '../../constants/regex/regexConstants';
+} from "../../constants/regex/regexConstants";
 
 export default function Form({
 	step,

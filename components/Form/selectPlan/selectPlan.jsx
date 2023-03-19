@@ -1,4 +1,4 @@
-import utilStyles from "../../../styles/Utils.module.css";
+import utilStyles from "../../../styles/utils.module.css";
 import selectPlanStyles from "../../../styles/SelectPlan/SelectPlan.module.css";
 
 import Image from "next/image";
