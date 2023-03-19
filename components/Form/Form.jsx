@@ -1,4 +1,4 @@
-import utilStyles from '../../styles/utils.module.css';
+import utilStyles from '../../styles/Utils.module.css';
 import formStyles from '../../styles/Form.module.css';
 import { useState } from 'react';
 import PersonalInfo from './PersonalInfo';
