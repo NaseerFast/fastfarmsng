@@ -5,7 +5,7 @@ import Image from "next/image";
 import ToggleButton from "./toggleButton";
 
 export default function SelectPlan({ selectPlanInfo, setSelectPlanInfo }) {
-	const cards = ["Basic", "Regular", "Gold"];
+	const cards = ["Arcade", "Advanced", "Pro"];
 
 	function getPrice(multiplier) {
 		return 109 + multiplier * 3;
