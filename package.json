@@ -2,11 +2,12 @@
   "name": "fastfarms-ng",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://fastfarms.coom.ng",
+
   "scripts": {
-    "dev": "next dev",
+    "dev": "node server.js",
     "build": "next build",
-    "start": "next start",
-    "export": "next build && next export"
+    "start": "NODE_ENV=production node server.js"
   },
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^3.0.0",
