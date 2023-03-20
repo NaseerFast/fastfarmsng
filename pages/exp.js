@@ -1,8 +1,8 @@
-import Head from "next/head";
-import Step from "../components/Step";
-import Form from "../components/Form/Form";
-import { useState } from "react";
-import Layout from "../components/Layout/Layout";
+import Head from 'next/head';
+import Step from '../components/Step';
+import Form from '../components/Form/Form';
+import { useState } from 'react';
+import Layout from '../components/Layout/Layout';
 
 const stepTitles = ["your info", "select plan", "add-ons", "summary"];
 
