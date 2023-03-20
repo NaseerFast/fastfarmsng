@@ -186,7 +186,7 @@ const CartPage = () => {
         </div>
       </div>
       <div class="relative mt-10 text-white">
-        <h3 class="mb-5 text-lg font-bold">Support</h3>
+        <h3 class="mb-5 text-lg font-bold">Support Line</h3>
         <p class="text-sm font-semibold">+2348064266739 <span class="font-light"></span></p>
         <p class="mt-1 text-sm font-semibold">info@fastfarms.com.ng <span class="font-light">(Email)</span></p>
         <p class="mt-2 text-xs font-medium">Call us now for payment related issues</p>
