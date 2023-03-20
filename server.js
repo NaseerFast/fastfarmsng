@@ -39,3 +39,5 @@ app.prepare().then(() => {
       console.log(`> Ready on http://${hostname}:${port}`)
     })
 })
+
+app.use(express.static(__dirname + "/public/"));
