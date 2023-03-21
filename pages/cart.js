@@ -85,11 +85,11 @@ const CartPage = () => {
       ) : (
 <div class="relative mx-auto w-full bg-green">
 
-  <div class="grid min-h-screen grid-cols-10">
-    <div class="col-span-full py-6 px-4 sm:py-12 lg:col-span-6 lg:py-24">
-      <div class="mx-auto w-full max-w-lg">
+  <div class="grid min-h-screen grid-cols-10 bg-red-300">
+    <div class="col-span-full py-6 px- sm:py-12 lg:col-span-6 lg:py-24">
+      <div class="mx-auto w-full ">
         <h1 class="relative text-2xl font-medium text-gray-700 sm:text-3xl">Secure Checkout<span class="mt-2 block h-1 w-10 bg-teal-600 sm:w-20"></span></h1>
-        <form action="" class="mt-10 flex flex-col space-y-4">
+        <form action="" class="mt-10 flex flex-col space-y-4 bg-blue-300">
           
         <div>
             <label for="email" class="text-xs font-semibold text-gray-600">Full Name</label>
