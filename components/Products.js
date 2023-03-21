@@ -39,27 +39,27 @@ const Products = () => {
       "image": "/assets/chicken-breast.jpg",
       "price": 1500
     },
-    {
-      "id": 4,
-      "product": "Whole Large",
-      "category": "xbox",
-      "image": "/assets/whole-chicken.jpg",
-      "price": 3500
-    },
-    {
-      "id": 5,
-      "product": "Chicken Feet",
-      "category": "xbox",
-      "image": "/assets/chicken-feet.jpg",
-      "price": 3000
-    },
-    {
-      "id": 6,
-      "product": "Chicken Leg",
-      "category": "xbox",
-      "image": "/assets/chicken-leg.jpg",
-      "price": 1200
-    },
+    // {
+    //   "id": 4,
+    //   "product": "Whole Large",
+    //   "category": "xbox",
+    //   "image": "/assets/whole-chicken.jpg",
+    //   "price": 3500
+    // },
+    // {
+    //   "id": 5,
+    //   "product": "Chicken Feet",
+    //   "category": "xbox",
+    //   "image": "/assets/chicken-feet.jpg",
+    //   "price": 3000
+    // },
+    // {
+    //   "id": 6,
+    //   "product": "Chicken Leg",
+    //   "category": "xbox",
+    //   "image": "/assets/chicken-leg.jpg",
+    //   "price": 1200
+    // },
     
 
   ]
